@@ -7,8 +7,8 @@ export function createFooter() {
 
   const currentPathname = window.location.pathname;
   if (
-    currentPathname == '/frontend/index.html' ||
-    currentPathname == '/frontend/'
+    currentPathname == '/index.html' ||
+    currentPathname == '/'
   ) {
     footer.className = 'footer footer-topbar';
   } else {

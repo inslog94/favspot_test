@@ -3,7 +3,7 @@ import {
   createMenu,
   createPinData,
   createThumbnailImg,
-} from '/frontend/assets/js/util/getPlaceInfo.js';
+} from '/assets/js/util/getPlaceInfo.js';
 
 export function createPinList(data) {
   const url = 'http://favspot.site:8000';

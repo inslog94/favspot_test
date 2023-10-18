@@ -1,11 +1,11 @@
-import { getLoginUserInfoRequest } from '/frontend/assets/js/content.js';
+import { getLoginUserInfoRequest } from '/assets/js/content.js';
 import {
   boardSimpleSave,
   displayMainBoards,
   getBoards,
   setMyBoard,
-} from '/frontend/assets/js/board.js';
-import { boardDetail } from '/frontend/assets/js/boardDetail.js';
+} from '/assets/js/board.js';
+import { boardDetail } from '/assets/js/boardDetail.js';
 import {
   MAP,
   MAP_OPTIONS,
@@ -40,7 +40,7 @@ import {
   ACCOUNT,
   requestUser,
   CURRENT_PINS,
-} from '/frontend/assets/js/data.js';
+} from '/assets/js/data.js';
 import {
   displayGeoLocationMap,
   closeZoomInLocation,
@@ -48,14 +48,14 @@ import {
   fullScreenEnd,
   move,
   displayMarkers,
-} from '/frontend/assets/js/map.js';
+} from '/assets/js/map.js';
 import {
   displayPinOverlay,
   setMarkersFromServer,
   pinSimpleSave,
-} from '/frontend/assets/js/pin.js';
-import { pinDetail } from '/frontend/assets/js/pinDetail.js';
-import { searchPlaceAsKeyword } from '/frontend/assets/js/search.js';
+} from '/assets/js/pin.js';
+import { pinDetail } from '/assets/js/pinDetail.js';
+import { searchPlaceAsKeyword } from '/assets/js/search.js';
 
 let currentMarker = null;
 
@@ -88,8 +88,8 @@ export function mapSetup() {
   const currentPathname = window.location.pathname;
   if (
     !(
-      currentPathname == '/frontend/index.html' ||
-      currentPathname == '/frontend/'
+      currentPathname == '/index.html' ||
+      currentPathname == '/'
     )
   ) {
     let mapTypeControl = new kakao.maps.MapTypeControl();
@@ -436,8 +436,8 @@ document.addEventListener("DOMContentLoaded", () => {
 
   const currentPathname = window.location.pathname;
   if (
-    currentPathname == '/frontend/assets/html/index.html#' ||
-    currentPathname == '/frontend/assets/html/index.html'
+    currentPathname == '/assets/html/index.html#' ||
+    currentPathname == '/assets/html/index.html'
   ) {
     // 각 드롭다운 메뉴 항목에 대해 이벤트 리스너 추가
     dropOptions.forEach((dropOption, index) => {
