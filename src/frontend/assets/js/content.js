@@ -47,7 +47,7 @@ export async function getBoardRequest(keyword) {
   // 각 드롭다운 메뉴 항목에 대해 새로운 마우스 오버/아웃 및 클릭 이벤트 리스너 추가
   newDropOptions.forEach((newDropOption, index) => {
     sortMouseEvent(newDropOption);
-    sortClickEvent(newDropOption, index, "http://127.0.0.1:8000/board", keyword);
+    sortClickEvent(newDropOption, index, "http://favspot.site:8000/board", keyword);
   });
 
   const response = await fetch(url, {
