@@ -157,11 +157,11 @@ CHANNEL_LAYERS = {
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'postgres',
+        'NAME': 'db',
         'USER': 'admin',
-        'PASSWORD': os.getenv('DB_PASSWORD'),
-        'HOST': os.getenv('DB_HOST'),
-        'PORT': '5432',  # PostgreSQL의 기본포트
+        'PASSWORD': 'admin',
+        'HOST': 'db',
+        'PORT': '5432',  # 5432는 PostgreSQL의 기본포트이다
     }
 }
 
