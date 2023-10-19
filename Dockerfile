@@ -1,6 +1,6 @@
 ### 우분투 초기 설정 ###
-# ubuntu 이미지 18.04 버전을 베이스 이미지로 한다
-FROM ubuntu:18.04
+# ubuntu 이미지 22.04 버전을 베이스 이미지로 한다
+FROM ubuntu:22.04
 
 # 우분투에서 다운로드 속도가 느리기 때문에 다운로드 서버를 바꿔주었다
 RUN sed -i 's@archive.ubuntu.com@mirror.kakao.com@g' /etc/apt/sources.list

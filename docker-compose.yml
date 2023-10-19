@@ -17,7 +17,7 @@ services:
     command: bash -c "
       python3 manage.py makemigrations &&
       python3 manage.py migrate &&
-      gunicorn app.wsgi:application -b 0.0.0.0:8000"
+      daphne app.asgi:application -b 0.0.0.0"
     depends_on:
       - db
     volumes:
